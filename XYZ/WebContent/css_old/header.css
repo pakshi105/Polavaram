@@ -1,0 +1,203 @@
+body{
+	font-family: Lato;
+font-weight: 400;
+font-style: normal;
+font-size: 16px;
+}
+
+.example2 .navbar-brand>img {
+  padding: 7px 15px;
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
+}
+
+.navbar-default{
+	background-color: white;
+	border-color: white;
+}
+
+.navbar-nav>li a{
+	color: #3b3b40 !important;
+}
+
+.navbar-nav>li>.dropdown-menu {
+	z-index: 9999;
+}
+
+.navbar-default .navbar-nav > .active > a{
+	color:#00c87c;
+	background-color:#fff;
+}
+
+
+.mainImage{
+	padding-top: 100px !important;
+padding-right: 60px !important;
+padding-bottom: 100px !important;
+padding-left: 60px !important;
+background-image: url(../images/img2.png) !important;
+background-position: center !important;
+background-repeat: no-repeat !important;
+background-size: cover !important;
+height:100%;
+}
+.mainImage h1{
+	font-size:80px;
+}
+
+.top-bar-info{
+	list-style: none;
+display: inline-block;
+vertical-align: middle;
+margin: 0;
+padding: 0;
+}
+
+.top-bar-info li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.top-bar-info li + li {
+    margin-left: 20px;
+}
+
+.top-bar-info li  a{
+	color:#fff;
+}
+
+.top-bar.top-bar-dark {
+	color: #fff !important;
+border-bottom-color: rgba(255,255,255,0.2);
+background-color:#000;
+line-height: 30px;
+font-family: 'Lato-ExtraBold';
+font-size: 12px;
+letter-spacing: 0.05em;
+padding-top: 7px;
+padding-bottom: 7px;
+}
+
+.padding0{
+	padding:0 !important;
+}
+
+.padding20{
+	padding-top:20px ;
+}
+
+.sectionSeparator{
+	padding: 20px 0 !important;
+}
+
+.sectionBox{
+	padding: 15px 0 !important;
+	clear:both;
+}
+
+.margin20{
+	margin-top:10px !important;
+}
+
+.clearfix{
+	clear:both;
+}
+
+.section1, .section2, .section3, .section4{
+
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+	box-sizing: border-box;
+padding-left: 15px;
+padding-right: 15px;
+width: 100%;
+}
+
+.sectionBox img{
+	opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.section1{
+	background-image: linear-gradient(rgba(255, 240, 240, 0.79), rgba(255, 255, 255, 0.3)), url("../images/img3.png") !important;
+}
+
+.section2{
+	background-image: linear-gradient(rgba(109, 155, 199, 0.89), rgba(255, 175, 195, 0.4)), url("../images/img4.png") !important;
+}
+
+.section3{
+	background-image: linear-gradient(rgba(125, 135, 135, 0.72), rgba(155, 155, 255, 0.29)), url("../images/img5.png") !important;
+}
+
+.section4{
+	background-image: linear-gradient(rgba(55, 55, 55, 0.61), rgba(255, 255, 255, 0.3)), url("../images/img1.jpg") !important;
+}
+
+.sectionHeading{
+	padding-top: 90px !important;
+padding-right: 30px !important;
+padding-left: 30px !important;
+color:#FEDA5F;
+font-weight:600;
+}
+
+.sectionContent{
+	padding-top: 10px !important;
+	padding-right: 30px !important;
+padding-left: 30px !important;
+color:#E2FC00 !important;
+}
+
+.sectionButton{
+	padding-top: 20px !important;
+padding-bottom: 60px !important;
+padding-left: 30px !important;
+font-weight: 800 !important;
+text-transform: uppercase;
+}
+
+.sectionButton a{
+	border: 1px solid transparent;
+	padding: 17px 24px;
+	border-width:2px;
+}
+
+
+.contact input{
+	margin-bottom:10px;
+}
+
+input.span3{
+	width:260px;
+}
+
+.span3.email{
+	margin-left:30px;
+}
+
+textarea.span6{
+	width:556px;
+	margin-bottom:20px;
+}
+
+.span6{
+	width:556px;
+	margin-bottom:20px;
+}
+
+.contact-section{	
+	margin-top:30px;
+}
+
+.menuHeading{
+	margin-bottom:20px;
+}

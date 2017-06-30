@@ -1,0 +1,218 @@
+<html>
+<head>
+<link href="css/bootstrap.min1.css" rel="stylesheet">
+<link href="css/header.css" rel="stylesheet">
+<script src="js/bootstrap.min1.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans'
+	rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+	<script>
+		function sendEmail() {
+
+			var name = document.getElementById("name");
+			var email = document.getElementById("email");
+			var message = document.getElementById("message");
+
+			var dataString = 'name1=' + name.value + '&email1=' + email.value
+					+ '&message1=' + message.value;
+			if (name == '' || email == '' || message == '') {
+				alert("Please Fill All Fields");
+			} else {
+				var xhttp = new XMLHttpRequest();
+				xhttp.onreadystatechange = function() {
+					if (this.readyState == 4 && this.status == 200) {
+						name.value = "";
+						email.value = "";
+						message.value = "";
+						alert("Thank you!")
+					}
+				};
+				xhttp.open("GET", "contact_email.jsp?" + dataString, true);
+				xhttp.send();
+			}
+		}
+	</script>
+
+	<div class="top-bar top-bar-dark">
+		<div class="container">
+			<div class="row">
+				<div class="sidebar top-bar-left col-md-6">
+					<aside id="text-3" class="widget widget_text">
+						<div class="textwidget">
+							<ul class="top-bar-info">
+								<li>CREATING THE FUTURE EXPERIENCE™</li>
+							</ul>
+						</div>
+					</aside>
+				</div>
+				<div class="sidebar text-right col-md-6">
+					<aside id="text-4" class="widget widget_text">
+						<div class="textwidget">
+							<ul class="top-bar-info">
+								<li><i class="fa fa-envelope"></i> <a
+									href="mailto:hello@gravityjack.com">hello@gravityjack.com</a></li>
+								<li><i class="fa fa-phone"></i> <a href="tel:15098639228">(509)
+										863-9228</a></li>
+							</ul>
+						</div>
+					</aside>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container example2">
+
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed"
+						data-toggle="collapse" data-target="#navbar2">
+						<span class="sr-only">Toggle navigation</span> <span
+							class="icon-bar"></span> <span class="icon-bar"></span> <span
+							class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href=""><img src="images/xyz2.png"
+						alt=""> </a>
+				</div>
+				<div id="navbar2" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right text-uppercase">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+				<!--/.nav-collapse -->
+			</div>
+			<!--/.container-fluid -->
+		</nav>
+	</div>
+	<div class="container" id="home">
+		<div class="mainImage">
+			<h1 style="color: #000; line-height: 1em;">
+				No Markers.<br>Augment Anything.<br> <span
+					style="color: #00c87c !important;">AR For The Real World.</span>
+			</h1>
+		</div>
+	</div>
+	<div class="container sectionSeparator" id="about">
+		<h1 class="menuHeading text-center">About Us</h1>
+		<div class="sectionBox">
+			<div class="col-sm-6">
+				<div class="section1">
+					<div class="sectionHeading">
+						<span
+							style="font-size: 2em; text-transform: uppercase; line-height: .8em;">Data<br>Capture
+						</span>
+					</div>
+					<div class="sectionContent">
+						<p>Any camera, any image; or use flight planning app on your
+							mobile or tablet for drone field operations, flight review, and
+							optimal data capture.​</p>
+					</div>
+					<div class="sectionButton">
+						<a
+							onmouseleave="this.style.borderColor='#ffffff'; this.style.backgroundColor='transparent'; this.style.color='#ffffff'"
+							onmouseenter="this.style.borderColor='#ffffff'; this.style.backgroundColor='#ffffff'; this.style.color='#ea9635';"
+							style="border-color: rgb(255, 255, 255); color: rgb(255, 255, 255); background-color: transparent;"
+							class="vc_general vc_btn3 vc_btn3-size-lg vc_btn3-shape-square vc_btn3-style-outline-custom"
+							href="/capabilities/virtual-reality" title="">Learn More</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="section2">
+					<div class="sectionHeading">
+						<span
+							style="font-size: 2em; text-transform: uppercase; line-height: .8em;">Data<br>Process
+						</span>
+					</div>
+					<div class="sectionContent">
+						<p>Choose offline processing on desktop for full control over
+							data, without needing an internet connection. Choose online
+							processing for fully automated, hardware free results on cloud.​</p>
+					</div>
+					<div class="sectionButton">
+						<a
+							onmouseleave="this.style.borderColor='#ffffff'; this.style.backgroundColor='transparent'; this.style.color='#ffffff'"
+							onmouseenter="this.style.borderColor='#ffffff'; this.style.backgroundColor='#ffffff'; this.style.color='#ea9635';"
+							style="border-color: rgb(255, 255, 255); color: rgb(255, 255, 255); background-color: transparent;"
+							class="vc_general vc_btn3 vc_btn3-size-lg vc_btn3-shape-square vc_btn3-style-outline-custom"
+							href="/capabilities/virtual-reality" title="">Learn More</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="sectionBox margin20">
+			<div class="col-sm-6">
+				<div class="section3">
+					<div class="sectionHeading">
+						<span
+							style="font-size: 2em; text-transform: uppercase; line-height: .8em;">Data<br>Analyze
+						</span>
+					</div>
+					<div class="sectionContent">
+						<p>For the cloud, monitor projects over time, use the drawing
+							overlay for construction, and automatic NDVI map for
+							agriculture.​</p>
+					</div>
+					<div class="sectionButton">
+						<a
+							onmouseleave="this.style.borderColor='#ffffff'; this.style.backgroundColor='transparent'; this.style.color='#ffffff'"
+							onmouseenter="this.style.borderColor='#ffffff'; this.style.backgroundColor='#ffffff'; this.style.color='#ea9635';"
+							style="border-color: rgb(255, 255, 255); color: rgb(255, 255, 255); background-color: transparent;"
+							class="vc_general vc_btn3 vc_btn3-size-lg vc_btn3-shape-square vc_btn3-style-outline-custom"
+							href="/capabilities/virtual-reality" title="">Learn More</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="section4">
+					<div class="sectionHeading">
+						<span
+							style="font-size: 2em; text-transform: uppercase; line-height: .8em;">Data<br>Collaboration
+						</span>
+					</div>
+					<div class="sectionContent">
+						<p>Visualize detailed 3D maps in AR or be immersed in VR with
+							the ability to annotate, add 3D objects, collaborate and
+							analyse​​</p>
+					</div>
+					<div class="sectionButton">
+						<a
+							onmouseleave="this.style.borderColor='#ffffff'; this.style.backgroundColor='transparent'; this.style.color='#ffffff'"
+							onmouseenter="this.style.borderColor='#ffffff'; this.style.backgroundColor='#ffffff'; this.style.color='#ea9635';"
+							style="border-color: rgb(255, 255, 255); color: rgb(255, 255, 255); background-color: transparent;"
+							class="vc_general vc_btn3 vc_btn3-size-lg vc_btn3-shape-square vc_btn3-style-outline-custom"
+							href="/capabilities/virtual-reality" title="">Learn More</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container contact sectionSeparator" id="contact">
+		<div class="col-sm-offset-3 span6 contact-section">
+			<h1 class="menuHeading text-center">Drop your Views with Us !!!
+			</h1>
+			<form id="myForm" name="myForm">
+				<div class="controls controls-row">
+					<input id="name" name="name" type="text" class="span3"
+						placeholder="Name"> <input id="email" name="email"
+						type="email" class="span3 email" placeholder="Email address">
+				</div>
+				<div class="controls">
+					<textarea id="message" name="message" class="span6"
+						placeholder="Your Message" rows="5"></textarea>
+				</div>
+
+				<div class="controls">
+					<button id="contact-submit" type="button" onclick="sendEmail()"
+						class="btn btn-primary input-medium pull-right">Send</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
